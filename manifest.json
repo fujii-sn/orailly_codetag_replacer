@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Oraily CodeTag Replacer",
+  "short_name": "OCR",
+  "version": "0.1.0.0",
+  "content_scripts": [{
+    "matches": [
+      "https://learning.oreilly.com/library/view/*",
+      "https://rust-exercises.com/100-exercises/*"
+    ],
+    "js": [
+      "app.js"
+    ],
+    "run_at": "document_end"
+  }]
+}
